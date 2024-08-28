@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root {
+    --one: #262626; 
+    --two: #F2F4F4;
+    --three: #6F7070;
+    --four: #181c28;
+    --five: #202535;
+    --font: #f2f2f2;
+    --shadow: #dedede15;
+    --normal: #dedede;
+    --fade: #00000098;
+    --modern-black: #171717
+}
+
+body {
+    background-image: url(../img/videoEdit.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: brightness(90%) blur(1px);
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+}
+
+#lg {
+    text-decoration: none;
+    font-size: 19px;
+    color: var(--font); 
+    letter-spacing: 2px;
+
+    background-image: linear-gradient(20deg, #f89999e7, #00458ec4); /*definir um degradê como fundo */
+    background-clip: text;  /* apagar do fundo tudo que não estiver imediatamente atrás de texto */
+    -webkit-background-clip: text; /* alguns navegadores precisam do prefixo */
+    -webkit-text-fill-color: transparent;   /* apagar o texto, deixando apenas o fundo atrás dele */
+    color: black;
+}
+
+#nav-top {
+    background-color: var(--one);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    height: auto;
+    height: 90px;
+}
+
+#nav-bottom {
+    background-color: var(--two);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px;
+    max-height: 10px;
+    height: auto;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: var(--four);
+    font-size: 14px;
+    margin-left: 35px;
+}
+
+.nav-items a:hover {
+    border-bottom: 1px solid var(--four);
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+@media only screen and (max-width: 480px) {
+    .content img {
+      width: 100%;
+    }
+  }
+
+.content img {
+    max-width: 100%;
+    width: 500px;
+    margin: 50px;
+    margin-bottom: 100px;
+    margin-top: 110px;
+    border-radius: 40px;
+    box-shadow: 2px 2px 10px var(--shadow);
+    transition: 0.2s ease;
+}
+
+.content img:hover {
+    transform: scale(1.1);
+    
+}
+
+.subject {
+    background-color: #000000;
+    height: 400px;
+    margin-top: 10px;
+    color: var(--normal);
+}
+
+.informations {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.informations h1 {
+    background-image: linear-gradient(110deg, #f89999e7, #00458E); /*definir um degradê como fundo */
+    background-clip: text;  /* apagar do fundo tudo que não estiver imediatamente atrás de texto */
+    -webkit-background-clip: text; /* alguns navegadores precisam do prefixo */
+    -webkit-text-fill-color: transparent;   /* apagar o texto, deixando apenas o fundo atrás dele */
+    color: black;
+
+    font-size: 90px;
+    text-align: center;
+    margin-left: 150px;
+    padding: 40px;
+    width: min-content;
+}
+
+.informations p {
+    width: 620px;
+    letter-spacing: 1px;
+}
+
+.powerfulTools {
+    background-color: var(--modern-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.powerfulTools img {  
+    height: 590px;
+    width: 100%;
+}
+
+.powerfulTools h1 {
+    background-image: linear-gradient(200deg, #f89999e7, #00458E); /*definir um degradê como fundo */
+    background-clip: text;  /* apagar do fundo tudo que não estiver imediatamente atrás de texto */
+    -webkit-background-clip: text; /* alguns navegadores precisam do prefixo */
+    -webkit-text-fill-color: transparent;   /* apagar o texto, deixando apenas o fundo atrás dele */
+    color: black;
+
+    font-size: 50px;
+    text-align: center;
+}
+
+.powerfulTools p {
+    width: 80%;
+    margin:30px;
+    letter-spacing: 1px;
+}
+
+.tutorials {
+    background-color: var(--modern-black);
+}
+
+.tutorials img{
+    height: 650px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.textFade {
+    background-color: var(--modern-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.textFade a {
+    text-decoration: none;
+    color: gray;
+
+}
+
+.textFade a:hover {
+    color: #dedededa;
+}
+
+.textFade h1 {
+    background-image: linear-gradient(110deg, #f89999e7, #00458E); 
+    background-clip: text;  /* apagar do fundo tudo que não estiver imediatamente atrás de texto */
+    -webkit-background-clip: text; /* alguns navegadores precisam do prefixo */
+    -webkit-text-fill-color: transparent;   /* apagar o texto, deixando apenas o fundo atrás dele */
+    color: black;
+
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.textFade p {
+    width: 80%;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+/* ---- */
+
+.linkGroups {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center; 
+    padding: 70px;
+    text-align: left;
+}
+
+.support, .mw, .company {
+    display: flex;
+    flex-direction: column; 
+    align-items: left; 
+    margin: 0 10px;
+}
+
+.linkGroups a {
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px 0; 
+    transition: .1s ease;
+    color: #dedede;
+    font-size: 12px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.linkGroups a:hover {
+    color: #4f647a;
+}
+
+#supTitle, #mwTitle, #comTitle {
+    font-weight: bold;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+/* ------- */
+
+.socialMedias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.mediaGroup {
+    margin: 17px;
+    transition: .2s ease;
+}
+
+.mediaGroup img {
+    width: 80%;
+    height: 80%;
+}
+
+.mediaGroup img:hover {
+    transform: scale(1.1);
+}
+
+.thanks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+/* ---------- */
+
+.line {
+    width: 100%;
+    background-color: #dedede;
+    height: 1px;
+    margin-bottom: 20px;
+}
+
+.footer {
+    width: 100%;
+    background-color: #dedede;
+    height: 1px;
+    margin-bottom: 20px;
+}
